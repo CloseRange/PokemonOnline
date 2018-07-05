@@ -4,7 +4,7 @@ var imageSets = {};
 class imageSet {
   constructor(file, name, w, h) {
     this.image = new rawImage(file, name);
-    this.split = new splitImage(null, name, w, h);
+    this.split = new splitImage(this, null, name, w, h);
     this.w = w;
     this.h = h;
     imageSets[name] = this;
