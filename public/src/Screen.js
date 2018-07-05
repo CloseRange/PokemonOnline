@@ -12,6 +12,7 @@ var Screen = {
   },
   init: function() {
     Screen.canvas = createCanvas(200, 200);
+    pixelDensity(1);
     window.onresize = Screen.resize;
     Screen.resize();
   },
